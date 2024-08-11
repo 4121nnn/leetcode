@@ -32,3 +32,18 @@ Set-Content -Path $output_file -Value $clipboardContent
 
 # Inform the user
 Write-Host "Clipboard content has been written to $output_file"
+
+# PowerShell script to commit and push changes to a Git repository
+
+
+# Stage all changes
+git add .
+
+# Commit the changes with the provided message
+git commit -m $name
+
+# Push the changes to the remote repository
+git push
+
+# Inform the user
+Write-Host "Changes have been committed and pushed to the remote repository."
