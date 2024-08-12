@@ -65,3 +65,5 @@ git push
 
 # Inform the user
 Write-Host "Changes have been committed and pushed to the remote repository."
+
+ $exit = Read-Host "Press enter to exit"
