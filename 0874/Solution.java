@@ -1,5 +1,5 @@
 class Solution {
-    int HASH_MULTIPLIER = 60001;
+    int HASH_MULTIPLIER = 30001;
     public int robotSim(int[] commands, int[][] obstacles) {
         int max = 0;
         int x = 0, y = 0, dir = 0;
