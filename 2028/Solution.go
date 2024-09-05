@@ -7,12 +7,13 @@ func missingRolls(rolls []int, mean int, n int) []int {
         return []int{}
     }
     res := make([]int, n)
-    d := dif / n
-    for i, _ := range res {
-        res[i] = d
+    d, r := dif / n, dif % n
+
+    for i := 0; i < r; i++ {
+        res[i] = d + 1
     }
-    for i := 0; i < dif % n; i++ {
-        res[i]++
+    for i := r; i < n; i++ {
+        res[i] = d
     }
     return res
 }
