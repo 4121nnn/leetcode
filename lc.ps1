@@ -66,8 +66,11 @@ git push
 # Inform the user
 Write-Host "Changes have been committed and pushed to the remote repository."
 Write-Host @"
-▒█▀▄░█▒█░▄▀▀░█▄█░█▄█▒██▀░█▀▄
-░█▀▒░▀▄█▒▄██▒█▒█▒█▒█░█▄▄▒█▄▀
+ _____ __ __ _____ __ __ __ __ _____ ____  
+|  _  |  |  |   __|  |  |  |  |   __|    \ 
+|   __|  |  |__   |     |     |   __|  |  |
+|__|  |_____|_____|__|__|__|__|_____|____/ 
+                                           
 "@
 
  $exit = Read-Host "Press enter to exit"
